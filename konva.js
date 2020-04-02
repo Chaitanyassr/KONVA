@@ -1,3 +1,6 @@
+//test
+document.getElementById("demo").innerHTML = 5 + 6;
+alert("This alert box was called with the onload event");
 //Stage
 //Layers are under stage
 //Layers1
