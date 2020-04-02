@@ -5,3 +5,28 @@
 //shape 1 ,2 ,3 ..n under layer
 //than we have to add shape 2 to layer 1 or we can also add to anotehr layer
 //than we have to add layer to stage
+
+//stage
+var stage = new Konva.Stage({
+
+	container: "bucket",
+	width: 400,
+	height: 400
+});
+
+//layer
+var layer = new Konva.layer({
+
+});
+
+//shape
+var circle = new Konva.Circle({
+	radius: 40;
+	fill: 'blue'
+});
+
+//add shape to layer
+layer.add(circle);
+
+//add layer to shape
+stage.add(layer);
