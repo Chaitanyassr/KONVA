@@ -21,6 +21,8 @@ var layer = new Konva.layer({
 
 //shape
 var circle = new Konva.Circle({
+	x: 100,
+	y: 100,
 	radius: 40;
 	fill: 'blue'
 });
