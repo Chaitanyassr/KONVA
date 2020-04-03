@@ -138,7 +138,19 @@ var spline = new Konva.Line({
 });
 
 var hexagon = new Konva.RegularPolygon({
-    x: 
+    x:  300,
+    y: 300,
+    sides: 6,
+    radius: 150,
+    fill: '#e05',
+    storkeWidth: 30,
+    storke: 'red',
+    // curving of edges
+    lineJoin: 'bevel',
+    //make it tottaly round
+    lineJoin: 'round',
+   // make it sharp
+    lineJoin: 'miter'
 });
 
 //filters / where hsl,blur etc are argument
