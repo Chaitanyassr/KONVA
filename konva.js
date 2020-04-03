@@ -27,7 +27,8 @@ var circle = new Konva.Circle({
 	x: 100,
 	y: 100,
 	radius: 40;
-	fill: 'blue'
+	fill: 'blue',
+	storke: 'black',
 });
 
 //add shape to layer
