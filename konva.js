@@ -127,6 +127,15 @@ var polygon = new Konva.Line({
 	fill: '#0ae'
 });
 
+var spline = new Konva.Line({
+    x: 10,
+    y: 10,
+    points: [10,20,30,100,50,200]
+    storke: 'blue'
+    storkeWidth: 3,
+    tension: 1
+});
+
 //filters / where hsl,blur etc are argument
 
 //for bluring the image
@@ -233,5 +242,7 @@ layer.add(ellipse);
 layer.add(pie);
 layer.add(randomline);
 layer.add(polygon);
+layer.add(spline);
+
 //add layer to shape
 stage.add(layer);
