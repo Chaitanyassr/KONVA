@@ -102,7 +102,10 @@ var randomline = new Konva.Line({
      points; [10,10,40,80,100,300,200,200,400,700],
      storkeWidth: 10,
      storke: '#0e5'
-     dash: [100,20, 10, 10]
+     dash: [100,20, 10, 10],
+     //tension make line curvy
+     tension: 0.5,
+     lineCap: "round"
 });
 
 //filters / where hsl,blur etc are argument
