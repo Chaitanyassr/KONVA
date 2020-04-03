@@ -20,8 +20,8 @@ var stage = new Konva.Stage({
 var stage = new Konva.Stage({
 
 	container: "matrix",
-	width: 400,
-	height: 400
+	width: 800,
+	height: 1000
 });
 
 //layer
@@ -47,11 +47,14 @@ var circle = new Konva.Circle({
 circle.draggable(true);
 
 var rectangle = new Konva.Rect({
-	x: 90,
+	x: 10,
 	y: 90,
-	width: 100,
-	height: 50,
-	fill: '#33'
+	width: 500,
+	height: 300,
+	fill: '#333',
+	storke: '#888'
+	storkeWidth: 10
+
 });
 
 //filters / where hsl,blur etc are argument
@@ -155,6 +158,7 @@ circle.on('mousedown', function(){
 
 //add shape to layer
 layer.add(circle);
+layer.add(rectangle);
 
 //add layer to shape
 stage.add(layer);
