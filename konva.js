@@ -39,6 +39,7 @@ var circle = new Konva.Circle({
 });
 circle.draggable(true);
 
+//filters
 //for bluring the image
 circle.cache();
 circle.filters([Konva.Filters,Blur]);
@@ -46,7 +47,11 @@ circle.blurRadius(10);
 
 circle.cache();
 circle.filters([Konva.Filters,Blur]);
-circle.brightness(10);
+circle.brightness(10
+
+circle.cache();
+circle.filters([Konva.Filters,Enhance]);
+circle.enhance(10);	
 
 //events
 circle.on('click', function(){
