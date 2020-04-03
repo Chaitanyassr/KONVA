@@ -18,7 +18,7 @@ var stage = new Konva.Stage({
 });
 
 //layer
-var layer = new Konva.layer({
+var layer = new Konva.Layer({
 
 });
 
@@ -32,8 +32,14 @@ var circle = new Konva.Circle({
 	storkeWidth: 9,
 	ShadowOffsetX: 20,
 	ShadowOffsetY: 10,
-	ShadowBlur: 50,
+	shadowBlur: 50,
 	opacity: 0.8 
+});
+
+//events
+circle.on('mouseover', function(){
+	this.fill('black')
+	layer.draw()
 });
 
 //add shape to layer
