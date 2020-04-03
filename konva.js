@@ -96,6 +96,13 @@ var pie = new Konva.Wedge({
     fill: red
 });
 
+var randomline = new Konva.Line({
+     X: 10,
+     y: 10,
+     points; [10,10,40,80,100,300,200,200,400,700],
+     storke: 10
+});
+
 //filters / where hsl,blur etc are argument
 
 //for bluring the image
@@ -200,6 +207,7 @@ layer.add(circle);
 layer.add(rectangle);
 layer.add(ellipse);
 layer.add(pie);
+layer.add(randomline);
 
 //add layer to shape
 stage.add(layer);
