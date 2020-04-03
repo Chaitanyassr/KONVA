@@ -77,6 +77,15 @@ p* 40
 circle.cache();
 circle.filters([Konva.Filters.Pixelate]);
 circle.pixelSize(3);
+
+circle.cache();
+circle.filters([Konva.Filters.Noise]);
+circle.noise(0.9);
+// create laeyr of color ...must be low if you want to see the effects
+circle.cache();
+circle.filters([Konva.Filters.Posterize]);
+circle.levels(0.01);
+
 //events
 
 //it well reduce the pixel size by sub -1
