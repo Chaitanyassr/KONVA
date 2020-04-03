@@ -46,7 +46,7 @@ circle.filters([Konva.Filters,Blur]);
 circle.blurRadius(10);
 
 circle.cache();
-circle.filters([Konva.Filters,Blur]);
+circle.filters([Konva.Filters,Brighten]);
 circle.brightness(10
 
 circle.cache();
