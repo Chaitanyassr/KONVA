@@ -44,11 +44,15 @@ circle.cache();
 circle.filters([Konva.Filters,Blur]);
 circle.blurRadius(10);
 
+circle.cache();
+circle.filters([Konva.Filters,Blur]);
+circle.brightness(10);
+
 //events
 circle.on('click', function(){
 	this.blurRadius(0);
 	layer.draw();
-})
+});
 
 circle.on('mouseover', function(){
 	this.fill('black');
