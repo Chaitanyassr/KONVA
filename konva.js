@@ -24,6 +24,13 @@ var stage = new Konva.Stage({
 	height: 1000
 });
 
+var stage = new Konva.Stage({
+
+	container: "ellipse",
+	width: 800,
+	height: 1000
+});
+
 //layer
 var layer = new Konva.Layer({
 
@@ -54,7 +61,18 @@ var rectangle = new Konva.Rect({
 	fill: '#333',
 	storke: '#888'
 	storkeWidth: 10
+	ShadowOffsetX: 10,
+    shadowOffsetY: 20,
+    shadowBlur: 30
+});
 
+var ellipse = new Konva.Ellipse({
+     x: 10,
+     y: 100,
+     radius: {
+     	x:500,
+     	y: 300
+     },
 });
 
 //filters / where hsl,blur etc are argument
