@@ -123,7 +123,8 @@ var polygon = new Konva.Line({
 	points: [10,20,40,90,100,300,200,100],
 	storke: 'black',
 	storkeWidth: 10,
-	closed; true
+	closed; true,
+	fill: '#0ae'
 });
 
 //filters / where hsl,blur etc are argument
