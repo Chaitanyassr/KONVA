@@ -47,6 +47,11 @@ circle.on('mouseout', function(){
 	layer.draw()
 });
 
+circle.on('click', function(){
+	this.fill('green');
+	layer.draw()
+});
+
 //add shape to layer
 layer.add(circle);
 
