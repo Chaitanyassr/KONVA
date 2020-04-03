@@ -17,6 +17,13 @@ var stage = new Konva.Stage({
 	height: 400
 });
 
+var stage = new Konva.Stage({
+
+	container: "matrix",
+	width: 400,
+	height: 400
+});
+
 //layer
 var layer = new Konva.Layer({
 
@@ -38,6 +45,14 @@ var circle = new Konva.Circle({
 //	draggable: true
 });
 circle.draggable(true);
+
+var rectangle = new Konva.Rect({
+	x: 90,
+	y: 90,
+	width: 100,
+	height: 50,
+	fill: '#33'
+});
 
 //filters / where hsl,blur etc are argument
 
