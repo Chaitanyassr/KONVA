@@ -35,8 +35,9 @@ var circle = new Konva.Circle({
 	shadowBlur: 50,
 	opacity: 0.8 
 	shadowColor: 'yellow'
+//	draggable: true
 });
-
+circle.draggable(true);
 //events
 circle.on('mouseover', function(){
 	this.fill('black');
@@ -56,6 +57,17 @@ circle.on('click', function(){
 circle.on('dblclick', function(){
 	this.fill('grey');
 	this.ShadowOffsetX(50);
+	layer.draw()
+});
+
+circle.on('mouseup', function(){
+	this.fill('grey');
+	this.ShadowOffsetX(50);
+	layer.draw()
+});
+
+circle.on('mousedown', function(){
+	this.fill('blue');
 	layer.draw()
 });
 
