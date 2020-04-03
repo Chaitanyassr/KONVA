@@ -73,7 +73,18 @@ circle.blue(10);
 circle.green(23);
 circle.alpha(0.5);
 
+p* 40
+circle.cache();
+circle.filters([Konva.Filters.Pixelate]);
+circle.pixelSize(3);
 //events
+
+//it well reduce the pixel size by sub -1
+circle.on('click', function(){
+	this.pixelSize(--p);
+	layer.draw()
+});
+
 circle.on('click', function(){
 	this.blurRadius(0);
 	layer.draw();
