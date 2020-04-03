@@ -61,7 +61,8 @@ circle.luminance(0.4);
 
 circle.cache();
 circle.filters([Konva.Filters,RGB]);
-circle.red(100);	
+circle.red(100);
+circle.blue(10);	
 
 //events
 circle.on('click', function(){
