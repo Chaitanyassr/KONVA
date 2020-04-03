@@ -31,6 +31,13 @@ var stage = new Konva.Stage({
 	height: 1000
 });
 
+var stage = new Konva.Stage({
+
+	container: "pie",
+	width: 800,
+	height: 1000
+});
+
 //layer
 var layer = new Konva.Layer({
 
@@ -79,6 +86,14 @@ var ellipse = new Konva.Ellipse({
 	ShadowOffsetX: 10,
     shadowOffsetY: 20,
     shadowBlur: 30
+});
+
+var pie = new Konva.Wedge({
+    x: 30,
+    y: 20,
+    angle: 30,
+    radius: 100,
+    fill: red
 });
 
 //filters / where hsl,blur etc are argument
@@ -183,6 +198,8 @@ circle.on('mousedown', function(){
 //add shape to layer
 layer.add(circle);
 layer.add(rectangle);
+layer.add(ellipse);
+layer.add(pie);
 
 //add layer to shape
 stage.add(layer);
