@@ -53,6 +53,12 @@ circle.cache();
 circle.filters([Konva.Filters,Enhance]);
 circle.enhance(10);	
 
+circle.cache();
+circle.filters([Konva.Filters,HSL]);
+circle.hue(10);	
+circle.saturation(0.5);
+circle.luminance(0.4);
+
 //events
 circle.on('click', function(){
 	this.blurRadius(0);
