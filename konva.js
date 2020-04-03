@@ -39,7 +39,7 @@ var circle = new Konva.Circle({
 });
 circle.draggable(true);
 
-//filters
+//filters / where hsl,blur etc are argument
 //for bluring the image
 circle.cache();
 circle.filters([Konva.Filters,Blur]);
@@ -58,6 +58,10 @@ circle.filters([Konva.Filters,HSL]);
 circle.hue(10);	
 circle.saturation(0.5);
 circle.luminance(0.4);
+
+circle.cache();
+circle.filters([Konva.Filters,RGB]);
+circle.red(100);	
 
 //events
 circle.on('click', function(){
