@@ -67,12 +67,18 @@ var rectangle = new Konva.Rect({
 });
 
 var ellipse = new Konva.Ellipse({
-     x: 10,
+     x: 210,
      y: 100,
      radius: {
-     	x:500,
-     	y: 300
+     	x: 200,
+     	y: 100
      },
+    fill: '#333',
+	storke: '#888'
+	storkeWidth: 10
+	ShadowOffsetX: 10,
+    shadowOffsetY: 20,
+    shadowBlur: 30
 });
 
 //filters / where hsl,blur etc are argument
