@@ -133,7 +133,8 @@ var spline = new Konva.Line({
     points: [10,20,30,100,50,200]
     storke: 'blue'
     storkeWidth: 3,
-    tension: 1
+    tension: 1,
+    lineJoin: round
 });
 
 //filters / where hsl,blur etc are argument
