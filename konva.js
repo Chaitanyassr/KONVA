@@ -29,7 +29,11 @@ var circle = new Konva.Circle({
 	radius: 40;
 	fill: 'blue',
 	storke: 'black',
-	storkeWidth: 9
+	storkeWidth: 9,
+	ShadowOffsetX: 40,
+	ShadowOffsetY: 30,
+	ShadowBlur: 50,
+	opacity:  
 });
 
 //add shape to layer
