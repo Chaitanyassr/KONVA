@@ -26,14 +26,14 @@ var layer = new Konva.layer({
 var circle = new Konva.Circle({
 	x: 100,
 	y: 100,
-	radius: 40;
+	radius: 50;
 	fill: 'blue',
 	storke: 'black',
 	storkeWidth: 9,
-	ShadowOffsetX: 40,
-	ShadowOffsetY: 30,
+	ShadowOffsetX: 20,
+	ShadowOffsetY: 10,
 	ShadowBlur: 50,
-	opacity:  
+	opacity: 0.8 
 });
 
 //add shape to layer
