@@ -137,6 +137,10 @@ var spline = new Konva.Line({
     lineJoin: round
 });
 
+var hexagon = new Konva.RegularPolygon({
+    x: 
+});
+
 //filters / where hsl,blur etc are argument
 
 //for bluring the image
@@ -244,6 +248,6 @@ layer.add(pie);
 layer.add(randomline);
 layer.add(polygon);
 layer.add(spline);
-
+layer.add(polygon);
 //add layer to shape
 stage.add(layer);
