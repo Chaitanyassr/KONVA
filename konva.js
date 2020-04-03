@@ -86,6 +86,13 @@ circle.cache();
 circle.filters([Konva.Filters.Posterize]);
 circle.levels(0.01);
 
+circle.cache();
+circle.filters([Konva.Filters.Grayscale]);
+
+circle.cache();
+circle.filters([Konva.Filters.Sepia]);
+
+
 //events
 
 //it well reduce the pixel size by sub -1
