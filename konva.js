@@ -38,7 +38,12 @@ var circle = new Konva.Circle({
 
 //events
 circle.on('mouseover', function(){
-	this.fill('black')
+	this.fill('black');
+	layer.draw() //this is important
+});
+
+circle.on('mouseout', function(){
+	this.fill('blue');
 	layer.draw()
 });
 
