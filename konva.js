@@ -106,6 +106,15 @@ var randomline = new Konva.Line({
      //tension make line curvy
      tension: 0.5,
      lineCap: "round"
+     //connect ending point and staring point
+     closed: true
+     fill: '#311'
+     shadowOffset {
+     	x: 20,
+     	y: 30
+     },
+     shadowBlur: 30,
+     rotation: -30
 });
 
 //filters / where hsl,blur etc are argument
