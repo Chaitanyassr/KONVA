@@ -117,6 +117,15 @@ var randomline = new Konva.Line({
      rotation: -30
 });
 
+var polygon = new Konva.Line({
+	x:20,
+	y: 20,
+	points: [10,20,40,90,100,300,200,100],
+	storke: 'black',
+	storkeWidth: 10,
+	closed; true
+});
+
 //filters / where hsl,blur etc are argument
 
 //for bluring the image
@@ -222,6 +231,6 @@ layer.add(rectangle);
 layer.add(ellipse);
 layer.add(pie);
 layer.add(randomline);
-
+layer.add(polygon);
 //add layer to shape
 stage.add(layer);
