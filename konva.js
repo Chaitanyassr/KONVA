@@ -30,10 +30,11 @@ var circle = new Konva.Circle({
 	fill: 'blue',
 	storke: 'black',
 	storkeWidth: 9,
-	ShadowOffsetX: 20,
-	ShadowOffsetY: 10,
+	shadowOffsetX: 20,
+	shadowOffsetY: 10,
 	shadowBlur: 50,
 	opacity: 0.8 
+	shadowColor: 'yellow'
 });
 
 //events
@@ -49,6 +50,12 @@ circle.on('mouseout', function(){
 
 circle.on('click', function(){
 	this.fill('green');
+	layer.draw()
+});
+
+circle.on('dblclick', function(){
+	this.fill('grey');
+	this.ShadowOffsetX(50);
 	layer.draw()
 });
 
